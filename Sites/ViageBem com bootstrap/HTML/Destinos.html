@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/CSS/destPromoContCadas.css" />
+    <title>Destinos</title>
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light bgNav border">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/HTML/index.html">ViageBem</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/HTML/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/Destinos.html">Destinos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/Promocoes.html">Promoções</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cadastros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+    
+      <!-- Carousel -->
+      <section class="container">
+        <h4>
+          Os melhores Destinos estão aqui, Mais de 400 opções ao redor do Mundo!
+        </h4>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <img
+                  src="/IMG/Destinos/carousel/MontFuji.jpg"
+                  class="d-block w-100 imgCarouser"
+                  alt="..."
+                />
+              </div>
+
+              <div class="carousel-caption">
+                <h2 class="carouselH1">Japão</h2>
+                <p class="carouselP">
+                  Com uma das Vistas mais paradisíaca do mundo. O monte Fuji é a
+                  mais alta montanha da ilha de Honshu e de todo o arquipélago
+                  japonês. É um vulcão ativo, porém de baixo risco de erupção. O
+                  monte Fuji localiza-se a oeste de Tóquio próximo da costa do
+                  oceano Pacífico da ilha de Honshu, na fronteira entre as
+                  províncias de Shizuoka e de Yamanashi. Um dos lugares mais visitados no Japão.
+                </p>
+              
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/IMG/Destinos/carousel/copacabana.jpg"
+                class="d-block w-100 imgCarouser"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <h2 class="carouselH1">Copacabana Rio de Janeiro</h2>
+                <p class="carouselP">
+                  A Cidade Maravilho. Famosa pela praia em forma de meia-lua,
+                  Copacabana é um dos bairros mais animados do Rio. Ela atrai
+                  moradores e turistas para atividades ininterruptas nas suas
+                  areias e no calçadão desenhado.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/IMG/Destinos/carousel/maldivas.jpg"
+                class="d-block w-100 imgCarouser"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <h2 class="carouselH1">Ilhas Maldivas</h2>
+                <p class="carouselP">
+                  As Maldivas estão na lista de lugares em que todos sonham
+                  visitar pelo menos uma vez na vida. As praias perfeitas com
+                  areia branca e um mar com tonalidades marcantes e os bangalôs
+                  luxuosos sobre o mar formam um cenário inesquecível e
+                  romântico!
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <!-- Cards -->
+
+      <section class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/IMG/Destinos/destinosCards/gramado.jpg"
+                class="card-img-top imgCard"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Gramado (RS)</h5>
+                <p class="card-text">
+                  Romantismo, flores, frio e um charme inigualável. É pouco quando pensamos em Granado. <br> <br>
+                </p>
+                <p class="precoDescCard">
+                  Hospedagem <br />
+                  Café Da Manhã Incluso.<br />
+                  Passagem Aérea (Ida E Volta)
+                </p>
+                <p class="precoDescCard">
+                  Apartir de <strike>R$ 1.306,00</strike> em Até 10x Sem Juros
+                </p>
+                <p class="precoCard">R$ 833,00</p>
+               
+                <hr />
+                <div class="card-footer">
+                  <button type="button" class="btn btn-outline-primary">
+                    COMPRAR
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/IMG/Destinos/destinosCards/avenidaPaulista .jpg"
+                class="card-img-top imgCard"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Avenida Paulista (SP)</h5>
+                <p class="card-text">
+                  A Avenida Paulista é um dos logradouros mais importantes do
+                  município de São Paulo com mais de 8 pontos turísticos
+                  gratuitos.
+                </p>
+                <p class="precoDescCard">
+                  Hospedagem <br />
+                  Café Da Manhã Incluso.<br />
+                  Passagem Aérea (Ida E Volta)
+                </p>
+                <p class="precoDescCard">
+                  Apartir de <strike> R$ 252,00</strike> em Até 10x Sem Juros
+                </p>
+                <p class="precoCard">R$ 189,00</p>
+                <hr />
+                <div class="card-footer">
+                  <button type="button" class="btn btn-outline-primary">
+                    COMPRAR
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/IMG/Destinos/destinosCards/florianopolis .jpg"
+                class="card-img-top imgCard"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Florianópolis (SC)</h5>
+                <p class="card-text">
+                  Florianópolis, a capital do estado de Santa Catarina no sul do
+                  Brasil, é maioritariamente constituída pela Ilha de Santa
+                  Catarina,
+                </p>
+                <p class="precoDescCard">
+                  Hospedagem <br />
+                  Café Da Manhã Incluso.<br />
+                  Passagem Aérea (Ida E Volta)
+                </p>
+                <p class="precoDescCard">
+                  Apartir de <strike> R$ 1250,00</strike> em Até 10x Sem Juros
+                </p>
+                <p class="precoCard">R$ 794,00</p>
+                <hr />
+                <div class="card-footer">
+                  <button type="button" class="btn btn-outline-primary">
+                    COMPRAR
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/IMG/Destinos/destinosCards/Paris.jpg"
+                class="card-img-top imgCard"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paris (FR)</h5>
+                <p class="card-text">
+                  Paris, a capital da França, é uma importante cidade europeia e
+                  um centro mundial de arte, moda, gastronomia e cultura.
+                </p>
+                <p class="precoDescCard">
+                  Hospedagem <br />
+                  Café Da Manhã Incluso.<br />
+                  Passagem Aérea (Ida E Volta)
+                </p>
+                <p class="precoDescCard">
+                  Apartir de <strike> R$ 2.559,00</strike> em Até 10x Sem Juros
+                </p>
+                <p class="precoCard">R$ 1.449,00</p>
+                <hr />
+                <div class="card-footer">
+                  <button type="button" class="btn btn-outline-primary">
+                    COMPRAR
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/IMG/Destinos/destinosCards/cairo.jpg"
+                class="card-img-top imgCard"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cairo, Egito (EG)</h5>
+                <p class="card-text">
+                  Cairo Capital do Egito a cidade dos livros de história onde
+                  viveu uma das civilizações mais antigas do planeta.
+                </p>
+                <p class="precoDescCard">
+                  Hospedagem <br />
+                  Café Da Manhã Incluso.<br />
+                  Passagem Aérea (Ida E Volta)
+                </p>
+                <p class="precoDescCard">
+                  Apartir de <strike> R$ 3.745,00</strike> em Até 10x Sem Juros
+                </p>
+                <p class="precoCard">R$ 2.049,00</p>
+                <hr />
+                <div class="card-footer">
+                  <button type="button" class="btn btn-outline-primary">
+                    COMPRAR
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/IMG/Destinos/destinosCards/times squere.jpg"
+                class="card-img-top imgCard"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Times Square, Nova York (EUA)</h5>
+                <p class="card-text">
+                  Um dos pontos mais conhecidos de Nova York. A Times Square é o
+                  encontro da Broadway com a Sétima Avenida.
+                </p>
+                <p class="precoDescCard">
+                  Hospedagem <br />
+                  Café Da Manhã Incluso.<br />
+                  Passagem Aérea (Ida E Volta)
+                </p>
+                <p class="precoDescCard">
+                  Apartir de <strike> R$ 3.170,00</strike> em Até 10x Sem Juros
+                </p>
+                <p class="precoCard">R$ 1.950,00</p>
+                <hr />
+                <div class="card-footer">
+                  <button type="button" class="btn btn-outline-primary">
+                    COMPRAR
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+
+    <footer id="rodape">
+      <br />
+      <h4>Formas de pagamentos</h4>
+      <img
+        class="pagamentos"
+        src="/IMG/cartões .png"
+        alt="formas de pagamentos"
+      />
+      <p>&copy; ViageBem</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
